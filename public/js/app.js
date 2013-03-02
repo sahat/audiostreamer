@@ -11,7 +11,7 @@ Person = Backbone.Model.extend({
 
 var person = new Person();
 
-var socket = io.connect('http://localhost:3000');
+var socket = io.connect('http://seniorproject.herokuapp.com');
 
 socket.on('this', function(data) {
   console.log(data);
