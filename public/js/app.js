@@ -38,3 +38,35 @@ $(function() {
   });
 });
 
+function enableAudio(element, audio, onEnd){
+  var callback = false,
+    click    = false;
+
+  click = function(e){
+    var forceStop = function () {
+        audio.removeEventListener('play', forceStop, false);
+        audio.pause();
+        element.removeEventListener('touchstart', click, false);
+        if(onEnd) onEnd();
+      },
+      progress  = function () {
+        audio.removeEventListener('canplaythrough', progress, false);
+        if (callback) callback();
+      };
+
+    audio.addEventListener('play', forceStop, false);
+    audio.addEventListener('canplaythrough', progress, false);
+    try {
+      audio.play();
+    } catch (e) {
+      callback = function () {
+        callback = false;
+        audio.play();
+      };
+    }
+  };
+  element.addEventListener('touchstart', click, false);
+}
+
+enableAudio($('#music'),audio);
+
