@@ -19,8 +19,8 @@ $('#pause').click(function() {
 });
 
 
-//var socket = io.connect('http://seniorproject.herokuapp.com');
-var socket = io.connect('http://localhost');
+var socket = io.connect('http://seniorproject.herokuapp.com');
+//var socket = io.connect('http://localhost');
 
 
 socket.on('this', function(data) {
