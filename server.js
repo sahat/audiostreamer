@@ -8,6 +8,7 @@ var io = require('socket.io').listen(server);
 io.configure(function () {
   io.set("transports", ["xhr-polling"]);
   io.set("polling duration", 10);
+  io.set('close timeout', 20);
 });
 
 app.configure(function(){
@@ -22,18 +23,31 @@ app.configure(function(){
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
+var clients = 0;
+
 io.sockets.on('connection', function (socket) {
+  clients++;
+  io.sockets.emit('count', { numberOfClients: clients });
   io.sockets.emit('this', { will: 'be received by everyone'});
+
   socket.on('play', function(data) {
     console.log('play received');
     io.sockets.emit('start', 'go ahead and play');
+  });
 
-  })
+  socket.on('pause', function() {
+     io.sockets.emit('halt', 'maestro stop playing!');
+  });
 
+  socket.on('disconnect', function() {
+    clients--;
+      io.sockets.emit('count', { numberOfClients: clients });
+  });
 });
 
-
-
+app.get('/clients', function(req, res) {
+   res.send(clients);
+});
 
 app.post('/fileupload', function(req, res) {
    console.log('received post request');
