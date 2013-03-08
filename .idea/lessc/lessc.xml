@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LessManager">
+    <option name="lessProfiles">
+      <map>
+        <entry key="w">
+          <value>
+            <LessProfile>
+              <option name="compressOutput" value="true" />
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="C:\Users\Sahat\Dropbox\Projects\seniordesign\public\css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="includePattern" value="style.less" />
+              <option name="lessDirPath" value="C:\Users\Sahat\Dropbox\Projects\seniordesign\public\css" />
+              <option name="name" value="w" />
+            </LessProfile>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
+

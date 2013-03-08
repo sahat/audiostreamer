@@ -4,16 +4,16 @@
     <list default="true" id="f94b2a69-212d-4be4-afbe-3a3787c626bb" name="Default" comment="" />
     <ignored path="seniordesign.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/style.less" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1361084447127" ignored="false" />
-    <file path="/index.html" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362459443704" ignored="false" />
+    <file path="/style.less" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362730852766" ignored="false" />
+    <file path="/index.html" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362736059129" ignored="false" />
     <file path="/dummy.xml" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1361085141823" ignored="false" />
-    <file path="/server.js" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362458919824" ignored="false" />
+    <file path="/server.js" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362732761408" ignored="false" />
     <file path="/.gitignore" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1361076925680" ignored="false" />
     <file path="/a.dummy" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1361081286606" ignored="false" />
     <file path="/bootstrap.less" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1361077728930" ignored="false" />
     <file path="/shortcuts.html" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362174588996" ignored="false" />
     <file path="/Dummy.txt" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362451329264" ignored="false" />
-    <file path="/app.js" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362458954989" ignored="false" />
+    <file path="/app.js" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362735128910" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/socket.io/lib/index.js" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362202521830" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/socket.io/lib/manager.js" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362202521830" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/socket.io/lib/namespace.js" changelist="f94b2a69-212d-4be4-afbe-3a3787c626bb" time="1362202521830" ignored="false" />
@@ -33,6 +33,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -67,7 +68,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -80,25 +80,36 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="54" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0">
+            <state line="12" column="1" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="27" selection-start="257" selection-end="257" vertical-scroll-proportion="-5.8846154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="506" selection-end="506" vertical-scroll-proportion="0.8150685">
+            <state line="101" column="11" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/style.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="65" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.18359375">
               <folding />
             </state>
           </provider>
@@ -125,19 +136,19 @@
         <option value="$PROJECT_DIR$/public/js/collections.js" />
         <option value="$PROJECT_DIR$/public/js/router.js" />
         <option value="$PROJECT_DIR$/public/css/grid.less" />
-        <option value="$PROJECT_DIR$/public/css/style.less" />
         <option value="$PROJECT_DIR$/shortcuts.html" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/public/css/style.less" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="218" />
+    <option name="y" value="19" />
+    <option name="width" value="838" />
+    <option name="height" value="689" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -206,12 +217,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="lessc" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="JavaScript.Libraries" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kazlovesbats" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.48478702" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -228,6 +239,7 @@
       <recent name="C:\Users\Sahat\Dropbox\Projects\seniordesign\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sahat\Dropbox\Projects\seniordesign\public\js\lib" />
       <recent name="C:\Users\Sahat\Dropbox\Projects\seniordesign\public" />
       <recent name="C:\Users\Sahat\Dropbox\Projects\seniordesign" />
       <recent name="C:\Users\Sahat\Dropbox\Projects\seniordesign\public\css" />
@@ -304,24 +316,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="218" y="19" width="838" height="689" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18887262" sideWeight="0.73417723" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3540146" sideWeight="0.7088388" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39873418" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2658228" sideWeight="0.9910913" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29116118" sideWeight="0.9967983" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2992126" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -412,11 +425,6 @@
         <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="589" selection-end="589" vertical-scroll-proportion="1.2253522" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/views.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -437,11 +445,6 @@
         <state line="7" column="2" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/fileupload/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -452,23 +455,37 @@
         <state line="5" column="43" selection-start="172" selection-end="172" vertical-scroll-proportion="0.035789475" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="54" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="29" column="21" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="257" selection-end="257" vertical-scroll-proportion="-5.8846154">
+        <state line="12" column="1" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="506" selection-end="506" vertical-scroll-proportion="0.8150685">
+        <state line="101" column="11" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="65" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.18359375">
           <folding />
         </state>
       </provider>

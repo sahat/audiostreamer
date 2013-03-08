@@ -4,6 +4,12 @@ var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
+var LastFmNode = require('lastfm').LastFmNode;
+
+var lastfm = new LastFmNode({
+  api_key: 'abc',
+  secret: 'secret'
+});
 
 io.configure(function () {
   io.set("transports", ["xhr-polling"]);
@@ -23,7 +29,66 @@ app.configure(function(){
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
+app.get('/tracks', function(req, res) {
+  res.send([
+    {
+      filename: 'eminem-till_i_collapse',
+      title: 'Till I Collapse',
+      duration: '4:57',
+      artist: 'Eminem',
+      album: 'The Eminem Show',
+      genre: 'Rap'
+    },
+    {
+      filename: 'withintemptation-stand_my_ground',
+      title: 'Stand My Ground',
+      duration: '4:28',
+      artist: 'Within Temptation',
+      album: 'Silent Force',
+      genre: 'Symphonic Metal'
+    },
+    {
+      filename: 'evanescence-lithium',
+      title: 'Lithium',
+      duration: '3:44',
+      artist: 'Evanescence',
+      album: 'The Open Door',
+      genre: 'Rock'
+    },
+    {
+      filename: 'tiesto-just_be',
+      title: 'Just Be',
+      duration: '3:11',
+      artist: 'Tiesto',
+      album: 'Just Be',
+      genre: 'Techno'
+    },
+    {
+      filename: 'apocalyptica-bring_them_to_light',
+      title: 'Bring Them To Light',
+      duration: '4:42',
+      artist: 'Apocalyptica',
+      album: '7th Symphony',
+      genre: 'Metal'
+    }
+  ]);
+});
+
 var clients = 0;
+
+/*
+var request = lastfm.request("artist.getInfo", {
+  artist: "The Mae Shi",
+  handlers: {
+    success: function(data) {
+      console.log("Success: " + data);
+    },
+    error: function(error) {
+      console.log("Error: " + error.message);
+    }
+  }
+});
+*/
 
 io.sockets.on('connection', function (socket) {
   clients++;
@@ -31,8 +96,8 @@ io.sockets.on('connection', function (socket) {
   io.sockets.emit('this', { will: 'be received by everyone'});
 
   socket.on('play', function(data) {
-    console.log('play received');
-    io.sockets.emit('start', 'go ahead and play');
+    console.log('play received', data);
+    io.sockets.emit('start', data);
   });
 
   socket.on('pause', function() {
@@ -54,7 +119,8 @@ app.post('/fileupload', function(req, res) {
   console.log(req.files);
 });
 
+
+
 server.listen(app.get('port'), function() {
   console.log("Express server listening on port " + app.get('port'));
 });
-
