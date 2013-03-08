@@ -4,12 +4,6 @@ var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
-var LastFmNode = require('lastfm').LastFmNode;
-
-var lastfm = new LastFmNode({
-  api_key: 'abc',
-  secret: 'secret'
-});
 
 io.configure(function () {
   io.set("transports", ["xhr-polling"]);
@@ -76,19 +70,6 @@ app.get('/tracks', function(req, res) {
 
 var clients = 0;
 
-/*
-var request = lastfm.request("artist.getInfo", {
-  artist: "The Mae Shi",
-  handlers: {
-    success: function(data) {
-      console.log("Success: " + data);
-    },
-    error: function(error) {
-      console.log("Error: " + error.message);
-    }
-  }
-});
-*/
 
 io.sockets.on('connection', function (socket) {
   clients++;

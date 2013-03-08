@@ -77,10 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="1" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+            <state line="72" column="0" selection-start="1750" selection-end="1750" vertical-scroll-proportion="0.09479554">
               <folding />
             </state>
           </provider>
@@ -90,9 +90,7 @@
         <entry file="file://$PROJECT_DIR$/public/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="101" column="11" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="65" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.18359375">
+            <state line="34" column="65" selection-start="1142" selection-end="1142" vertical-scroll-proportion="-22.23077">
               <folding />
             </state>
           </provider>
@@ -137,10 +135,10 @@
         <option value="$PROJECT_DIR$/public/js/router.js" />
         <option value="$PROJECT_DIR$/public/css/grid.less" />
         <option value="$PROJECT_DIR$/shortcuts.html" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
         <option value="$PROJECT_DIR$/public/css/style.less" />
         <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -176,6 +174,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,19 +209,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="lessc" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="lessc" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.48478702" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -460,19 +458,10 @@
         <state line="29" column="21" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="11" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -485,7 +474,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="65" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.18359375">
+        <state line="34" column="65" selection-start="1142" selection-end="1142" vertical-scroll-proportion="-22.23077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="0" selection-start="1750" selection-end="1750" vertical-scroll-proportion="0.09479554">
           <folding />
         </state>
       </provider>
