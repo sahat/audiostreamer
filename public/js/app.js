@@ -1,4 +1,4 @@
-
+/*
 $(function() {
   var Song = Backbone.Model.extend({
     defaults: {
@@ -85,7 +85,7 @@ $(function() {
   });
 
 });
-
+*/
 
 
 
