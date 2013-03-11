@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="backbone" type="javaScript">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/js/backbone.js" />
+    </SOURCES>
+  </library>
+</component>

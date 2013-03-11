@@ -1,62 +1,91 @@
-/*
+
 $(function() {
-  var Track = Backbone.Model.extend({
-
-    defaults: function() {
-
+  var Song = Backbone.Model.extend({
+    defaults: {
+      filename: 'Not specified',
+      title: 'Not specified',
+      duration: 'Not specified',
+      artist: 'Not specified',
+      album: 'Not specified',
+      genre: 'Not specified'
     },
-
     initialize: function() {
-
+      console.log('New song has been initialized');
     }
-
   });
 
-  var TrackList = Backbone.Collection.extend({
+  var Playlist = Backbone.Collection.extend({
+    model: Song,
+    url: '/tracks'
+ });
 
-    url: '/tracks',
-
-    model: Track
-
+  var song1 = new Song({
+    filename: 'eminem-till_i_collapse',
+    title: 'Till I Collapse',
+    duration: '4:57',
+    artist: 'Eminem',
+    album: 'The Eminem Show',
+    genre: 'Rap'
+  });
+  var song2 = new Song({
+    filename: 'withintemptation-stand_my_ground',
+    title: 'Stand My Ground',
+    duration: '4:28',
+    artist: 'Within Temptation',
+    album: 'Silent Force',
+    genre: 'Symphonic Metal'
+  });
+  var song3 = new Song({
+    filename: 'evanescence-lithium',
+    title: 'Lithium',
+    duration: '3:44',
+    artist: 'Evanescence',
+    album: 'The Open Door',
+    genre: 'Rock'
+  });
+  var song4 = new Song({
+    filename: 'tiesto-just_be',
+    title: 'Just Be',
+    duration: '3:11',
+    artist: 'Tiesto',
+    album: 'Just Be',
+    genre: 'Techno'
+  });
+  var song5 = new Song({
+    filename: 'apocalyptica-bring_them_to_light',
+    title: 'Bring Them To Light',
+    duration: '4:42',
+    artist: 'Apocalyptica',
+    album: '7th Symphony',
+    genre: 'Metal'
   });
 
-  var Tracks = new TrackList;
-  Tracks.fetch();
+  var myPlaylist = new Playlist([song1, song2, song3, song4, song5]);
 
-  var TrackView = Backbone.View.extend({
-
+  var PlaylistView = Backbone.View.extend({
     tagName: 'tr',
-
     className: 'track',
-
     template: _.template($('track-template').html()),
-
     events: {
-      'click .track': 'toggleSelection',
       'dblclick .track': 'playTrack'
     },
-
     initialize: function() {
       this.listenTo(this.model, 'change', this.render);
     },
-
     render: function() {
       this.$el.html(this.template(this.model.toJSON()));
       return this;
     },
-
-    toggleSelection: function() {
+    pause: function() {
       this.$el.toggleClass('alert-info');
     },
-
-    playTrack: function() {
+    play: function() {
 
     }
-
   });
 
 });
-*/
+
 
 
 
