@@ -76,8 +76,15 @@ io.sockets.on('connection', function (socket) {
   io.sockets.emit('count', { numberOfClients: clients });
   io.sockets.emit('this', { will: 'be received by everyone'});
 
+  socket.emit('delay', new Date());
+  
+  socket.on('current_time', function(data) {
+    socket.emit('now', new Date());
+  });
+
   socket.on('play', function(data) {
     console.log('play received', data);
+
     io.sockets.emit('start', data);
   });
 

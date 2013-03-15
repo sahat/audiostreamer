@@ -91,7 +91,16 @@ $(function() {
 
 $('#play').click(function() {
   socket.emit('play', 'start emit has been triggered');
-});
+  var ping = new Date();
+  socket.emit('current_time', ping);
+  socket.on('now', function(data) {
+    newdate = new Date();
+    // global variable latency
+    latency = newdate - ping;
+    console.log(newdate, ping);
+    console.log(latency);
+  });
+  });
 $('#pause').click(function() {
   socket.emit('pause', 'pause the music  for everyone');
 });
@@ -102,18 +111,16 @@ if (window.location.hostname === 'localhost') {
   var socket = io.connect('http://seniorproject.herokuapp.com');
 }
 
-
-socket.on('this', function(data) {
-  console.log(data);
-});
-
 socket.on('count', function(data) {
   $('#numberOfClients').text(data.numberOfClients);
 });
 
 socket.on('start', function(data) {
   console.log(data);
-  $('#'+data.track.id+' audio').get(0).play();
+  var audio = $('#'+data.track.id+' audio').get(0);
+  audio.autobuffer = true;
+  audio.currentTime(latency/2);
+  audio.play();
 });
 
 socket.on('halt', function(data) {
@@ -123,9 +130,6 @@ socket.on('halt', function(data) {
   });
 });
 
-socket.on('now', function(data) {
-  console.log(data);
-});
 
 
 
@@ -146,9 +150,9 @@ $(function() {
       socket.emit('play', { track: {
         id: $(this).attr('id'),
         title: $('.title', this).text(),
-        artist: $('.artist', this).text()
-      }});
+    artist: $('.artist', this).text()
+  }});
 
-    });
+});
   });
 });
