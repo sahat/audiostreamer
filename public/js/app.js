@@ -29,13 +29,12 @@ socket.on('count', function (data) {
 socket.on('beginPlaying', function (data) {
   var audio = $('#' + data.track.id + ' audio')[0];
   audio.autobuffer = true;
-  console.log(latency);
-  audio.currentTime = latency;
-  audio.play();
+  setTimeout(function() {
+    audio.play();
+  }, latency)
 });
 
 socket.on('halt', function (data) {
-  console.log(data);
   $.each($('audio'), function () {
     this.pause();
   });
@@ -48,7 +47,7 @@ setInterval(function() {
     latency = endTime - startTime;
     console.log(latency);
   });
-}, 1000);
+}, 2000);
 
 
 $(function () {
