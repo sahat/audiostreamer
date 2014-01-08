@@ -1,7 +1,7 @@
 if (window.location.hostname === 'localhost') {
   var socket = io.connect('http://localhost');
 } else {
-  var socket = io.connect('http://seniorproject.herokuapp.com');
+  var socket = io.connect('ws://seniorproject.herokuapp.com');
 }
 var latency = 0;
 
