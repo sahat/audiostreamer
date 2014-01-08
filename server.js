@@ -6,9 +6,7 @@ var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 
 io.configure(function () {
-  io.set("transports", ["xhr-polling"]);
-  io.set("polling duration", 10);
-  io.set('close timeout', 20);
+  io.set("transports", ["websocket"]);
 });
 
 app.configure(function(){
@@ -73,19 +71,15 @@ var clients = 0;
 
 io.sockets.on('connection', function (socket) {
   clients++;
-  io.sockets.emit('count', { numberOfClients: clients });
-  io.sockets.emit('this', { will: 'be received by everyone'});
 
-  socket.emit('delay', new Date());
-  
-  socket.on('current_time', function(data) {
-    socket.emit('now', new Date());
+  io.sockets.emit('count', { numberOfClients: clients });
+
+  socket.on('initiatePlay', function(data) {
+    io.sockets.emit('beginPlaying', data);
   });
 
-  socket.on('play', function(data) {
-    console.log('play received', data);
-
-    io.sockets.emit('start', data);
+  socket.on('ping', function(data) {
+    socket.emit('pingback', (new Date()).getTime());
   });
 
   socket.on('pause', function() {
@@ -94,7 +88,7 @@ io.sockets.on('connection', function (socket) {
 
   socket.on('disconnect', function() {
     clients--;
-      io.sockets.emit('count', { numberOfClients: clients });
+    io.sockets.emit('count', { numberOfClients: clients });
   });
 });
 
