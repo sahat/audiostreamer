@@ -3,7 +3,17 @@ if (window.location.hostname === 'localhost') {
 } else {
   var socket = io.connect('ws://seniorproject.herokuapp.com');
 }
-var latency = 0;
+var latency;
+
+
+setInterval(function() {
+  var startTime = Date.now();
+  socket.emit('ping');
+  socket.on('pong', function() {
+    latency = Date.now() - startTime;
+    $('#ping').text(latency);
+  });
+}, 500);
 
 //$('#play').click(function () {
 //  socket.emit('play', 'start emit has been triggered');
@@ -40,14 +50,7 @@ socket.on('halt', function (data) {
   });
 });
 
-setInterval(function() {
-  var startTime = (new Date()).getTime();
-  socket.emit('ping', startTime);
-  socket.on('pingback', function(endTime) {
-    latency = endTime - startTime;
-    console.log(latency);
-  });
-}, 2000);
+
 
 
 $(function () {
